@@ -1,0 +1,45 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "zh-CN" }}">
+{% include head.html %}
+<body>
+    <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+<input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
+
+{% include header.html %}
+
+<header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
+    <div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
+        <h2>{{ page.title }}</h2>
+    </div>
+    {% if page.cover %}
+    <div class="filter"></div>
+    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
+    {% endif %}
+</header>
+
+<div class="post-content">
+    {% if page.subtitle %}
+    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+    <article class="markdown-body">
+        {{ content }}
+        {% include copyright.html %}
+    </article>
+</div>
+{% if site.disqus and page.comments != false %}
+<section class="post-footer-item comment">
+    <div id="disqus_thread"></div>
+</section>
+{% endif %}
+{% include footer.html %}
+{% include disqus_comments.html %}
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="/assets/js/index.min.js"></script>
+</body>
+</html>

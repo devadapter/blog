@@ -1,0 +1,14 @@
+<header class="g-header">
+    <!--<div class="g-logo">-->
+      <!--<a href="{{ "/" | relative_url }}"></a>-->
+    <!--</div>-->
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav scrolling-navbar">
+        <ul>
+            {% assign links = site.navigation %}
+            {% for link in links %}
+            <li><a href="{{ link.url | prepend: site.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

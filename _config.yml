@@ -1,0 +1,119 @@
+# Site settings 配置站点
+title: 'cossjie的技术坊'
+description: '很高兴能在这里与你分享我对技术和生活的思考。'
+keyword: 'cossjie, cossjie的独立博客, cossjie的博客, 后端, 后端开发, 后端博客, java, github, 开源项目'
+url: 'https://blog.cossjie.com'
+baseurl: ''
+cdnurl: /assets
+#photos_prefix: /aaaa
+excerpt_separator:  '<!-- more -->'
+lang: zh_CN
+permalink: /:year/:month/:title.html
+
+# Navigation links
+navigation:
+  - title: 首页
+    url: /
+  - title: 归档
+    url: /archive.html
+  - title: 标签
+    url: /tags.html
+  - title: 友链
+    url: /links.html
+  - title: 关于
+    url: /about.html
+
+# Author 配置博主信息
+author: 'cossjie'
+nickname: 'cossjie'
+bio: '程序员，极客，开源爱好者，追求一切美的事物，好交良友。'
+#avatar: '/assets/img/profile.jpeg'
+avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=375996056&spec=100'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# Comments
+disqus: true
+disqus_url: https://blog-cossjie-com.disqus.com/embed.js
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# 百度统计
+baidu_verify: PZYc0mdO5T
+baidu_tj: 06210113483ca33a6fa5a67d9ffeca26
+## 王爵的
+# baidu_verify: PZYc0mdO5T
+# baidu_tj: 8cccd241573243ebb44564215283cd3c
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'food'
+
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  twitter: 'https://twitter.com/cossjie'
+  github: 'https://github.com/cossjie'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# 分页设置
+paginate: 6
+paginate_path: 'articles/:num'
+
+# Markdown
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids:       true
+  auto_id_prefix: 'id-'
+  toc_levels:     '2,3'
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+
+jekyll-archives:
+  enabled:
+    - month
+  layout: 'archive'
+  permalinks:
+#    year: '/:year/'
+    month: '/:year/:month/'
+#    day: '/:year/:month/:day/'
+#    tag: '/tag/:name/'
+#    category: '/category/:name/'
+
+toc:
+  min_level: 2 # default: 1
+  max_level: 3 # default: 6
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-toc
+
+exclude:
+  - node_modules
+  - dev
+  - package.json
+  - gulpfile.js
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .DS_Store
+  - deploy.sh
+  - screenshot
+  - LICENSE
+  - README.md
