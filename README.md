@@ -1,4 +1,4 @@
-# cossjie技术坊
+# cossjie的技术坊
 
 这是一个 `Jekyll` 主题的模板，Fork自 [biezhi-blog](https://github.com/biezhi/blog)。该主题是基于 `Jekyll3` + `Gulp` 构建的。
 
