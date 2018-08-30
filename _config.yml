@@ -22,6 +22,8 @@ navigation:
     url: /links.html
   - title: 关于
     url: /about.html
+  - title: RSS
+    url: /feed.xml
 
 # Author 配置博主信息
 author: 'cossjie'
@@ -95,6 +97,15 @@ toc:
   min_level: 2 # default: 1
   max_level: 3 # default: 6
 
+# jekyll_admin 配置隐藏侧栏上不需要的链接
+jekyll_admin:
+  hidden_links:
+  - posts
+  - pages
+  - staticfiles
+  - datafiles
+  - configuration
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -102,6 +113,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-archives
   - jekyll-toc
+  - jekyll-seo-tag
 
 exclude:
   - node_modules
