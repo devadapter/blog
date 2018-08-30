@@ -29,4 +29,7 @@ group :jekyll_plugins do
   gem 'uglifier'
   gem 'jekyll-archives'
   gem 'jekyll-toc'
+  gem 'jekyll-admin', group: :jekyll_plugins
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-feed'
 end
