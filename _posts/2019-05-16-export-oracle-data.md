@@ -10,6 +10,8 @@ tags: ['oracle','导出数据']
 
 <!-- more -->
 
+### sql语句
+
 ```sql
 SELECT
 a.TABLE_NAME 表名,

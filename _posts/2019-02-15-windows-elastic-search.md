@@ -24,7 +24,7 @@ tags: ['ElasticSearch','grunt','ElasticSearch插件']
 
 ### 安装ElasticSearch
 
-1. 首先到 https://www.elastic.co/cn/downloads/elasticsearch 下载安装包，这里我选择的是zip包
+1. 首先到 [https://www.elastic.co/cn/downloads/elasticsearch](https://www.elastic.co/cn/downloads/elasticsearch) 下载安装包，这里我选择的是zip包
 
    ![1](https://img-blog.csdn.net/20180718170141444?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZqeWFi/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
@@ -42,18 +42,16 @@ tags: ['ElasticSearch','grunt','ElasticSearch插件']
 
 #### 安装nodejs
 
-打开 https://nodejs.org/en/download/ 地址，下载windows installer 的msi
+打开 [https://nodejs.org/en/download/]( https://nodejs.org/en/download/ ) 地址，下载windows installer 的msi
 
 ![è¯·è¾å¥å¾çæè¿°](https://img-blog.csdn.net/20180718171219166?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZqeWFi/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 下载之后，双击msi，根据步骤安装nodejs即可，我把nodejs的安装目录设置为D:\elasticsearch\elasticsearch-6.3.1\nodejs。
 安装完成之后，应该是可以直接使用node -v的命令来查看nodejs的版本的，但是在这儿我就遇到问题了。
-nodejs安装完成之后，一开始我就在nodejs的目录下，使用node -v查看版本是可以查看版本的，但当我进行下一步想要安装grunt的时候，输入安装grunt的指令“npm install -g grunt-cli”之后，就出现了“npm不是内部或外部命令，也不是...”，命令完全无法执行，下一步执行不了，而且如果我不在nodejs目录下输入“node -v”，是看不到nodejs版本的，也就是说nodejs我并没有安装成功。我后来也重新安装了几次，还是出现这样的问题。后来在网上查询es系统的安装，关于nodejs的安装说是还有把NODE_HOME设置到环境变量里，但我设置之后并没有解决问题。最后是终于找到了解决方法！！！https://www.cnblogs.com/hackyo/p/8110951.html，安装nodejs除了环境变量，还要在nodejs的目录下新建两个文件夹：node-cache和node-global这是用来放npm全局模块的安装目录。
+nodejs安装完成之后，一开始我就在nodejs的目录下，使用node -v查看版本是可以查看版本的，但当我进行下一步想要安装grunt的时候，输入安装grunt的指令“npm install -g grunt-cli”之后，就出现了“npm不是内部或外部命令，也不是...”，命令完全无法执行，下一步执行不了，而且如果我不在nodejs目录下输入“node -v”，是看不到nodejs版本的，也就是说nodejs我并没有安装成功。我后来也重新安装了几次，还是出现这样的问题。后来在网上查询es系统的安装，关于nodejs的安装说是还有把NODE_HOME设置到环境变量里，但我设置之后并没有解决问题。最后是终于找到了解决方法！！！[https://www.cnblogs.com/hackyo/p/8110951.html](https://www.cnblogs.com/hackyo/p/8110951.html)，安装nodejs除了环境变量，还要在nodejs的目录下新建两个文件夹：node-cache和node-global这是用来放npm全局模块的安装目录。
 我按照这个方法做了之后，就解决了。
 
-> 输入 “node -v”，查看nodejs的版本。如果安装正确，不论当前是什么目录，只要输入“node -v”都可以看到版本。
-
-![1565064351130](C:/Users/J/AppData/Roaming/Typora/typora-user-images/1565064351130.png)
+> 输入 “node -v”，查看nodejs的版本。如果安装正确，不论当前是什么目录，只要输入“node -v”都可以看到版本号。
 
 #### 安装grunt
 
@@ -65,7 +63,7 @@ nodejs安装完成之后，一开始我就在nodejs的目录下，使用node -v�
 
 #### 配置head
 
-进入 [https://github.com/mobz/elasticsearch-head](http:// https//github.com/mobz/elasticsearch-head) 地址，下载zip，然后解压即可。
+进入 [https://github.com/mobz/elasticsearch-head]( https://github.com/mobz/elasticsearch-head ) 地址，下载zip，然后解压即可。
 
 我把head直接放在了D:\elasticsearch\elasticsearch-head-master，这样好管理，当然大家随意。
 
@@ -75,7 +73,7 @@ nodejs安装完成之后，一开始我就在nodejs的目录下，使用node -v�
 
 2. 在head/_site/app.js中把localhost修改成你es的服务器地址，如：
 
-> this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http://111.11.11.1:9200";
+> this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "[http://111.11.11.1:9200](http://111.11.11.1:9200)";
 
 ![è¯·è¾å¥å¾çæè¿°](https://img-blog.csdn.net/20180718174657971?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZqeWFi/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
@@ -119,5 +117,5 @@ nodejs安装完成之后，一开始我就在nodejs的目录下，使用node -v�
 
 来源：CSDN
 
-原文转载：https://blog.csdn.net/fjyab/article/details/81101284
+原文转载：[https://blog.csdn.net/fjyab/article/details/81101284](https://blog.csdn.net/fjyab/article/details/81101284)
 

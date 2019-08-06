@@ -5,7 +5,7 @@ date: 2018-09-04
 author: 似水年崋
 toc: true
 cover: /img/cover/centos-install-jenkins.png
-tags: ['jenkins密码', 'jenkins'，'管理员']
+tags: ['jenkins密码', 'jenkins','jenkins管理员']
 ---
 
 >  有个时候我们忘记了jenkins管理员密码，由于jenkins没有使用数据库，所有的信息都保存在配置文件中。

@@ -76,6 +76,6 @@ $ systemctl start jenkins
 
 打开jenkins管理页面
 
-http://localhost:8080/
+[localhost](http://localhost:8080/)
 
 根据提示输入密码，安装所需要的插件即可。

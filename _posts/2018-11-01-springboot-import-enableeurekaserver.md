@@ -8,13 +8,13 @@ cover: /img/cover/spring-boot.png
 tags: ['springboot', 'eureka','springcloud']
 ---
 
->  项目添加eureka依赖时，总是无法成功引入。导致程序@enableeurekaserver报错
+### 项目添加eureka依赖时，总是无法成功引入。导致程序@enableeurekaserver报错
 
-> 最终找到原因是springboot与springcloud的支持版本不一致
+**最终找到原因是springboot与springcloud的支持版本不一致**
 
 <!-- more -->
 
-### 修改pom.xml
+### 解决办法修改pom.xml
 
 ```xml
 <dependencies>
@@ -62,4 +62,5 @@ Spring Cloud并没有使用熟悉的数字版本号，而是对应一个开发�
 
 作者：[alsoAm](https://me.csdn.net/alsoAm)
 来源：CSDN
-原文转载：https://blog.csdn.net/zhang53141/article/details/83091032
+原文转载：[https://blog.csdn.net/zhang53141/article/details/83091032](https://blog.csdn.net/zhang53141/article/details/83091032)
+
