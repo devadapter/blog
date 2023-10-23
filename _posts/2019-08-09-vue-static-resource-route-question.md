@@ -2,7 +2,7 @@
 layout: post
 title: vue打包后静态资源路径不正确
 date:  2019-08-19
-author: cossjie
+author: apters
 toc: true
 cover: https://source.unsplash.com/random
 tags: ['vue','vue-cli']

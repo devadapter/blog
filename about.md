@@ -17,6 +17,6 @@ date: 2018-08-28
 
 ## 联系
 
-* GitHub：[@cossjie](https://github.com/cossjie){:target="_blank"}
-* Twitter: [@cossjie](https://twitter.com/cossjie){:target="_blank"}
+* GitHub：[@apters](https://github.com/apters){:target="_blank"}
+* Twitter: [@apters](https://twitter.com/apters){:target="_blank"}
 
